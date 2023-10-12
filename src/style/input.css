@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+
+@layer base {
+    body {
+        @apply font-sans bg-[#211d30] text-white;
+    }
+    h1 {
+        @apply font-extrabold text-[64px] leading-[77px] tracking-normal font-hind text-white;
+    }
+    .rte p {
+        @apply text-[18px] leading-[32px] tracking-normal text-[#bababa] font-sans;
+    }
+    .container {
+        @apply w-full px-[20px] mx-auto;
+    }
+    .site-header {
+        @apply py-[20px] absolute top-0 left-0 right-0 z-[50] w-full;
+    }
+    .header-wrap {
+        @apply flex items-center justify-between flex-wrap;
+    }
+    .header-logo {
+        @apply w-full max-w-[155px];
+    }
+    .header-logo a {
+        @apply block;
+    }
+    .header-logo img {
+        @apply max-w-full block;
+    }
+    .primary-button {
+        @apply min-h-[58px] min-w-[200px] inline-flex items-center justify-center bg-[#7423FF] text-white rounded-full font-medium text-[18px] leading-[18px];
+    }
+    .header-nav ul {
+        @apply flex items-center justify-between gap-[40px];
+    }
+    .header-nav ul li a {
+        @apply  text-[18px] leading-[1] text-white font-medium;
+    }
+    .hero-section {
+        @apply bg-[#211d30] h-[100vh] py-[200px];
+    }
+    .hero-section h1 {
+        @apply text-white mb-[20px]; 
+    }
+    .hero-wrap {
+        @apply flex items-center justify-between flex-wrap;
+    }
+    
+    .hero-wrap > div.hero-content {
+        @apply w-[45%];
+    }
+    .hero-content p {
+        @apply mb-[35px];
+    }
+    
+}
